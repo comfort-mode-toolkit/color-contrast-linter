@@ -1,39 +1,16 @@
-# Release Notes - v0.1.0
+# Release Notes - v0.1.1
 
-## Initial Release
+## Maintenance Release
 
-We are excited to announce the first release of **Color Contrast Linter**, a CLI tool designed to automate WCAG color contrast compliance checks in your development workflow.
+This release includes minor metadata updates to ensure better distribution and compliance.
 
-### Key Features
+### Changes
 
-- **Automated Linting**: Check color pairs against WCAG AA and AAA standards.
-- **Configurable**: Define your color pairs and contrast requirements in a simple `.color_pairs.yml` file.
-- **CLI Commands**:
-  - `cc-lint init`: Generate a starter configuration file.
-  - `cc-lint lint`: Run the contrast check on your configured pairs.
-- **CI/CD Ready**: Easily integrate into GitHub Actions or other CI pipelines to prevent accessibility regressions.
-- **Rich Output**: Clear, color-coded terminal output powered by `rich`.
+- **License Inclusion**: The `LICENSE` file is now explicitly included in the package metadata, ensuring it is distributed with the package.
+- **PyPI Compatibility**: Fixed package naming convention to ensure smooth uploads to PyPI.
 
-### Installation
+### Upgrading
 
 ```bash
-pip install color-contrast-linter
+pip install --upgrade color-contrast-linter
 ```
-
-### Quick Start
-
-1.  Initialize configuration:
-    ```bash
-    cc-lint init
-    ```
-2.  Run the linter:
-    ```bash
-    cc-lint lint
-    ```
-
-### Dependencies
-
-- `cm-colors >= 0.5.0`
-- `click`
-- `rich`
-- `pyyaml`
