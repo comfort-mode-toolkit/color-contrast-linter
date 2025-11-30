@@ -25,7 +25,5 @@ jobs:
         
     - name: Run Lint
       run: |
-        # Create a sample config for testing
-        cc-lint init
         # Run lint
         cc-lint lint
