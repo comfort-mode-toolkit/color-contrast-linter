@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="color-contrast-linter",
+    name="color_contrast_linter",
     version="0.1.0",
     description="Automated WCAG color contrast linter for accessibility compliance in CI/CD pipelines.",
     long_description=open("README.md").read(),
