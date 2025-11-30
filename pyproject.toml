@@ -1,0 +1,19 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "color-contrast-linter"
+version = "0.1.0"
+description = "A CLI tool to lint color pairs for contrast compliance using cm-colors."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "cm-colors>=0.5.0",
+    "click",
+    "rich",
+    "pyyaml",
+]
+
+[project.scripts]
+cc-lint = "color_contrast_linter.cli:main"

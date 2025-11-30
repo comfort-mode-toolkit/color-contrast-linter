@@ -1,0 +1,57 @@
+# Color Contrast Linter
+
+A CLI tool to lint color pairs for contrast compliance using `cm-colors`.
+
+## Installation
+
+```bash
+pip install color-contrast-linter
+```
+
+## Usage
+
+### Initialize Configuration
+
+Run the `init` command to create a `.color_pairs.yml` file:
+
+```bash
+cc-lint init
+```
+
+This creates a configuration file where you can define your color pairs and the minimum contrast standard (AA or AAA).
+
+```yaml
+min_contrast: AA
+pairs:
+  - foreground: "#000000"
+    background: "#ffffff"
+  - foreground: "#ffffff"
+    background: "#000000"
+```
+
+### Lint Colors
+
+Run the `lint` command to check your color pairs:
+
+```bash
+cc-lint lint
+```
+
+The tool supports Hex, RGB, and RGBA color formats.
+
+## CI/CD Integration
+
+You can use this tool in your CI/CD pipelines to ensure accessibility compliance.
+
+```yaml
+steps:
+  - uses: actions/checkout@v3
+  - name: Set up Python
+    uses: actions/setup-python@v4
+    with:
+      python-version: '3.x'
+  - name: Install dependencies
+    run: pip install color-contrast-linter
+  - name: Lint colors
+    run: cc-lint lint
+```

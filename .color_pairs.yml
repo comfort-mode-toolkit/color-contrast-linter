@@ -1,0 +1,6 @@
+min_contrast: AA
+pairs:
+- background: '#ffffff'
+  foreground: '#000000'
+- background: '#000000'
+  foreground: '#ffffff'
