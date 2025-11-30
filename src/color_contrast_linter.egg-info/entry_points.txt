@@ -1,0 +1,2 @@
+[console_scripts]
+cc-lint = color_contrast_linter.cli:main
