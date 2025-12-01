@@ -1,7 +1,8 @@
 # Color Contrast Linter - Automated Accessibility Testing
 
 ![License](https://img.shields.io/pypi/l/color-contrast-linter)
-![Python Version](https://img.shields.io/pypi/pyversions/color-contrast-linter)
+![Monthly Downloads](https://img.shields.io/pypi/dm/color-contrast-linter)
+![Python Version](https://img.shields.io/pypi/v/color-contrast-linter)
 
 
 **Color Contrast Linter** is a powerful CLI tool designed to automate **WCAG 2.1** color contrast compliance checks. It helps developers and designers ensure their color palettes meet **AA** and **AAA** accessibility standards directly within their workflow or **CI/CD pipeline**.
